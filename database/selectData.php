@@ -31,13 +31,13 @@ if(isset($_POST["btnShowAllData"]))
             ?>
   <table border="1">
         <tr>
-            <td> student id</td>
-             <td> student Name</td>
+            <td> Student id</td>
+             <td> Student Name</td>
               <td> Email</td>
                <td> Gender</td>
-                <td>hobbies</td>
-                 <td>country</td>
-                 <td>joining data</td>
+                <td>Hobbies</td>
+                 <td>Country</td>
+                 <td>Joining data</td>
                  <td> Status</td>
         </tr>
         <?php
