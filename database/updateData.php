@@ -70,8 +70,8 @@ if(isset($_POST["btnSearchData"]))
         <?php if ($rows['gender']=='Other') echo "checked" ?> Other> 
         <br/><br/>
             
-            <br></br>
-            <label>hobbies:</label>
+            <br/></br>
+            <label>Hobbies:</label>
             <input type="checkbox" name="hobbies[]" value="Reading">Reading
      <?php
      if(in_array("Reading", explode(",",$rows["hobbies"])))
@@ -110,7 +110,7 @@ if(isset($_POST["btnSearchData"]))
                 echo "checked";
             } ?>
                   <br></br>
-                  <label>country:</label>
+                  <label>Country:</label>
                   <select name="cbCountry">
                     <option >---select country</option>
                    
@@ -120,7 +120,7 @@ if(isset($_POST["btnSearchData"]))
                     <option value="UK"  <?php if($rows['country']=='UK') echo "selected" ?>>UK</option>
                     <option value="USA"  <?php if($rows['country']=='USA') echo "selected" ?>>USA</option>
         </select>
-        <br></br>
+        <br/></br>
         
         <input type="submit" name="btnUpdateData" value="Updata Data">
 </form>
@@ -140,7 +140,7 @@ if(isset($_POST["btnUpdateDate"]))
         $updataFullName=$_POST["txtFullName"];
         $updataEmail=$_POST["txtemail"];
         $updataPassword=$_POST["txtpassword"];
-        $updataPassword=$_POST["rbGender"];
+        $updataGender=$_POST["rbGender"];
         $updataCountry=$_POST["cbCountry"];
 
         $updateHobbies=implode(",",$_POST["hobbies"]);
