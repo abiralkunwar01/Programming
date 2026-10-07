@@ -49,7 +49,7 @@ if(isset($_POST["btn_signup"]))
             <input type="radio" name="rbGender" value="female">Female
             <input type="radio" name="rbGender" value="others">Other
             <br></br>
-            <label>hobbies:</label>
+            <label>Hobbies:</label>
             <input type="checkbox" name="hobbies[]" value="Reading">Reading
             <input type="checkbox" name="hobbies[]" value="Writing">Writing
             <input type="checkbox" name="hobbies[]" value="Gaming">Gaming
@@ -58,7 +58,7 @@ if(isset($_POST["btn_signup"]))
             <input type="checkbox" name="hobbies[]" value="working">Working
             <input type="checkbox" name="hobbies[]" value="Sporting">Sporting
                   <br></br>
-                  <label>country:</label>
+                  <label>Country:</label>
                   <select name="cbCountry">
                     <option >---select country</option>
                     <option value="Nepal">Nepal</option>
