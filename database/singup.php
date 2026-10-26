@@ -58,15 +58,15 @@ if(isset($_POST["btn_signup"]))
             <input type="checkbox" name="hobbies[]" value="working">Working
             <input type="checkbox" name="hobbies[]" value="Sporting">Sporting
                   <br></br>
-                  <label>Country:</label>
-                  <select name="cbCountry">
+        <label>Country:</label>
+        <select name="cbCountry">
                     <option >---select country</option>
                     <option value="Nepal">Nepal</option>
                     <option value="India">India</option>
                     <option value="Pakistan">Pakistan</option>
                     <option value="UK">UK</option>
                     <option value="USA">USA</option>
-</select>
+        </select>
 <br></br>
 <input type="submit" name="btn_signup" value="sign up">
 </form>       
