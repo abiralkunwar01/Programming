@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>आमा ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <button onclick="showMessage()">आमा ❤️</button>
+
+        <div id="hearts"></div>
+
+        <div id="message">
+            <p style="color:brown;">“आमा” शब्द आफैंमा धेरै सुन्दर र गहिरो छ।</p>
+
+            <p style="color:blueviolet;">
+                सानो शब्द हो, तर यसभित्र माया, त्याग,
+                सुरक्षा, भरोसा र संसार नै अटेको हुन्छ। 🥰
+            </p>
+
+            <p style="color: blue;">
+                “आमा” — उच्चारण गर्दा नै मनलाई
+                शान्त बनाउने शब्द। ❤️
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+        function showMessage() {
+
+            document.getElementById("message").classList.add("show");
+
+            for (let i = 0; i < 10; i++) {
+
+                let heart = document.createElement("span");
+
+                heart.innerHTML = "❤️";
+
+                heart.classList.add("heart");
+
+                heart.style.left = Math.random() * 100 + "%";
+
+                heart.style.animationDelay =
+                    Math.random() * 1 + "s";
+
+                document.getElementById("hearts")
+                    .appendChild(heart);
+
+                setTimeout(() => {
+                    heart.remove();
+                }, 3000);
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+
